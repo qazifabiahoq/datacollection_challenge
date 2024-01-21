@@ -2,6 +2,13 @@
 ## Background
 This project involves web scraping data from two Mars-related websites and performing data analysis on the extracted information. The goal is to gain insights into Mars news articles and analyze temperature and atmospheric pressure data from the Curiosity rover.
 
+## Project Structure
+The main repository branch includes the following folders:
+
+mar_temperature_data: Contains the CSV file with the analyzed Mars weather data.
+part_1_mars_news: Jupyter Notebook for scraping titles and preview text from Mars news articles.
+part_2_mars_weather: Jupyter Notebook for scraping and analyzing Mars weather data.
+
 ## Project Overview
 This project consists of two main deliverables:
 
