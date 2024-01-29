@@ -43,6 +43,7 @@ The number of Martian days' worth of data.
 The coldest and warmest months on Mars, visualized with a bar chart.
 The months with the lowest and highest atmospheric pressure on Mars, visualized with a bar chart.
 An estimate of the number of terrestrial days in a Martian year, visualized by plotting the daily minimum temperature.
+
 ### Step 6: Save the Data
 The final DataFrame was exported to a CSV file for future reference.
 
@@ -54,10 +55,14 @@ The scraping of Mars news articles was successful, resulting in a list of dictio
 ### Deliverable 2: Mars Weather Data Analysis
 The analysis of Mars weather data revealed interesting patterns:
 
-There are 12 months on Mars, and the dataset contains approximately 1867 Martian days' worth of data.
-The third month has the coldest average minimum temperature, while the eighth month is the warmest.
-Atmospheric pressure is lowest in the sixth month and highest in the ninth.
-The plot of minimum temperature against terrestrial days suggests a Mars year is approximately 675 Earth days, consistent with known information.
+#### Findings:
+The analysis revealed 12 months on Mars, with approximately 1867 Martian days' worth of data.
+
+The third month exhibited the coldest average minimum temperature, while the eighth month was the warmest.
+
+Atmospheric pressure was lowest in the sixth month and highest in the ninth.
+
+A cyclical pattern in daily minimum temperatures suggested a Mars year of around 675 Earth days, confirmed by an internet search.
 
 ## Conclusion
 This project showcases the application of web scraping techniques to gather Mars-related information and the utilization of data analysis to derive meaningful insights. The combination of Splinter, Beautiful Soup, and Pandas facilitated the extraction, manipulation, and analysis of data, contributing to a comprehensive understanding of Mars weather and recent news.
