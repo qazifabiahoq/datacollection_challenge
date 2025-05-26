@@ -1,74 +1,74 @@
 # Mars Web Scraping and Data Analysis Project
-## Background
-This project involves web scraping data from two Mars-related websites and performing data analysis on the extracted information. The goal is to gain insights into Mars news articles and analyze temperature and atmospheric pressure data from the Curiosity rover.
 
-## Project Structure
-The main repository branch includes the following folders:
+## Project Description
 
-mar_temperature_data: Contains the CSV file with the analyzed Mars weather data.
-part_1_mars_news: Jupyter Notebook for scraping titles and preview text from Mars news articles.
-part_2_mars_weather: Jupyter Notebook for scraping and analyzing Mars weather data.
+This project aims to extract and analyze data from Mars-related websites to gain insights into Mars news and its weather conditions. The objective is to provide a clear understanding of recent Mars exploration news and detailed analysis of temperature and atmospheric pressure data collected by the Curiosity rover.
 
-## Project Overview
-This project consists of two main deliverables:
+By uncovering trends in Mars weather and summarizing current Mars news, this project benefits researchers, space enthusiasts, and educators by making Mars exploration data accessible and understandable.
 
-## Deliverable 1: Scrape Titles and Preview Text from Mars News
-### Step 1: Visit the Mars News Website
-Automated browsing with Splinter was used to visit the Mars news site at Mars News Site. The webpage was inspected to identify the HTML elements to scrape.
+## Dataset Description
 
-### Step 2: Scrape the Website
-Beautiful Soup was utilized to create a BeautifulSoup object and extract text elements from the Mars News website. Titles and preview text of news articles were scraped and stored in Python data structures.
+Two main datasets were used:
 
-### Step 3: Store the Results
-The scraped information was stored in Python dictionaries, where each dictionary represents a news article with keys for 'title' and 'preview'. All dictionaries were then stored in a Python list. The list was printed in the Jupyter Notebook for verification.
+* Mars news articles scraped from NASA's Mars News website via an educational platform created by the University of Toronto.
+* Mars weather data sourced from the Curiosity rover's observations, available on a dedicated Mars temperature data site maintained for educational use.
 
-## Deliverable 2: Scrape and Analyze Mars Weather Data
-### Step 1: Visit the Mars Temperature Data Site
-Automated browsing was employed to visit the Mars Temperature Data Site at Mars Temperature Data Site. The webpage was inspected to identify the HTML elements to scrape.
+Both datasets were collected through web scraping techniques.
 
-### Step 2: Scrape the Table
-Beautiful Soup was used to create a BeautifulSoup object and extract data from the HTML table. The extracted data was then assembled into a Pandas DataFrame with appropriate column headings.
+## Methodology
 
-### Step 3: Store the Data
-The scraped data was stored in a Pandas DataFrame with columns such as 'id,' 'terrestrial_date,' 'sol,' 'ls,' 'month,' 'min_temp,' and 'pressure.' The DataFrame was displayed to verify its successful creation.
+The project consists of two parts:
 
-### Step 4: Prepare Data for Analysis
-Data types of each column were examined, and necessary type conversions were performed. The DataFrame was modified to ensure proper data types for analysis.
+**Part 1: Mars News Scraping**
 
-### Step 5: Analyze the Data
-Pandas functions were used to analyze the dataset and answer specific questions about Mars weather:
+* Automated browsing was done with Splinter to navigate the Mars News site.
+* Beautiful Soup extracted titles and preview text of news articles.
+* The data was organized into Python dictionaries and stored in a list for further use.
 
-The number of months on Mars.
-The number of Martian days' worth of data.
-The coldest and warmest months on Mars, visualized with a bar chart.
-The months with the lowest and highest atmospheric pressure on Mars, visualized with a bar chart.
-An estimate of the number of terrestrial days in a Martian year, visualized by plotting the daily minimum temperature.
+**Part 2: Mars Weather Data Scraping and Analysis**
 
-### Step 6: Save the Data
-The final DataFrame was exported to a CSV file for future reference.
+* The Mars temperature data site was visited using automated browsing.
+* Beautiful Soup scraped the relevant HTML table containing weather data.
+* Data was assembled into a Pandas DataFrame with columns like 'id,' 'terrestrial\_date,' 'sol,' 'month,' 'min\_temp,' and 'pressure.'
+* Data types were checked and converted as needed for analysis.
+* Key questions about Mars weather were answered using Pandas functions and visualized with bar charts and plots.
+* The final processed dataset was saved as a CSV file for future reference.
 
-## Project Results and Findings
+## Key Findings
 
-### Deliverable 1: Mars News Articles
-The scraping of Mars news articles was successful, resulting in a list of dictionaries containing titles and preview text. Each dictionary represents a news article, providing valuable insights into recent Mars-related events and discoveries.
+**What are the characteristics of Mars weather data?**
 
-### Deliverable 2: Mars Weather Data Analysis
-The analysis of Mars weather data revealed interesting patterns:
+* Mars has 12 months.
+* Approximately 1867 Martian days (sols) of weather data were analyzed.
 
-#### Findings:
-The analysis revealed 12 months on Mars, with approximately 1867 Martian days' worth of data.
+**Which month is the coldest and warmest on Mars?**
 
-The third month exhibited the coldest average minimum temperature, while the eighth month was the warmest.
+* The third month recorded the coldest average minimum temperature.
+* The eighth month had the warmest average temperature.
 
-Atmospheric pressure was lowest in the sixth month and highest in the ninth.
+**How does atmospheric pressure vary throughout the Martian year?**
 
-A cyclical pattern in daily minimum temperatures suggested a Mars year of around 675 Earth days, confirmed by an internet search.
+* The lowest atmospheric pressure was in the sixth month.
+* The highest pressure occurred in the ninth month.
+
+**What is the estimated length of a Martian year?**
+
+* Daily minimum temperature trends suggest a Martian year lasts about 675 Earth days, consistent with known scientific data.
+
+**What insights were gained from Mars news scraping?**
+
+* Recent news articles were successfully scraped, providing up-to-date information on Mars exploration events and discoveries.
 
 ## Conclusion
-This project showcases the application of web scraping techniques to gather Mars-related information and the utilization of data analysis to derive meaningful insights. The combination of Splinter, Beautiful Soup, and Pandas facilitated the extraction, manipulation, and analysis of data, contributing to a comprehensive understanding of Mars weather and recent news.
 
-## Note:
-This project was developed as part of the University of Toronto Boot Camp certification program. The websites used for scraping were created by the University of Toronto for educational purposes.
+The project effectively demonstrates the use of web scraping and data analysis to collect and interpret Mars-related information. It combines automated web browsing, HTML parsing, and data manipulation techniques to provide meaningful insights into Mars weather patterns and recent news. The approach contributes to making complex space data more accessible and understandable.
 
-## Reference:
-The Mars News websiteLinks to an external site. is operated by edX Boot Camps LLC for educational purposes only. The news article titles, summaries, dates, and images were scraped from NASA's Mars NewsLinks to an external site. website in November 2022. Images are used according to the JPL Image Use PolicyLinks to an external site., courtesy NASA/JPL-Caltech.
+## Recommendations
+
+Future efforts could focus on expanding the scope of data sources to include other Mars missions or datasets, enhancing visualization methods to better illustrate trends, and applying machine learning techniques to predict future Mars weather conditions based on historical data.
+
+## Credits
+
+This project was developed as part of the University of Toronto Boot Camp certification program. The Mars News website and Mars weather data sites were created by the University of Toronto for educational purposes.
+
+News content was scraped from NASA's Mars News website, with images used following NASA/JPL-Caltech image use policies.
